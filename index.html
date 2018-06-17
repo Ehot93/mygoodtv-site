@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>MYGOODTV</title>
+</head>
+<body>
+   <header> <p id="logo"><a href="index.html"><img src="image/logo.PNG" alt="logo"></a></p>
+          <p id="phone">+7 900 80 80 <br>звонок бесплатный</p>
+           <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="market.html">Магазин</a></li>
+            <li><a href="forum/index.php">Форум</a></li>
+            <li><a href="cabinet.html">Личный кабинет</a></li>
+        </ul>
+        <!--Слайдер-->
+        <div class="wrapper">
+	<input type="radio" name="point" id="slide1" checked>
+	<input type="radio" name="point" id="slide2">
+	<input type="radio" name="point" id="slide3">
+	<input type="radio" name="point" id="slide4">
+	<input type="radio" name="point" id="slide5">
+	<div class="slider">
+		<div class="slides slide1"></div>
+		<div class="slides slide2"></div>
+		<div class="slides slide3"></div>
+		<div class="slides slide4"></div>
+		<div class="slides slide5"></div>
+	</div>
+	<div class="controls">
+		<label for="slide1"></label>
+		<label for="slide2"></label>
+		<label for="slide3"></label>
+		<label for="slide4"></label>
+		<label for="slide5"></label>
+	</div>
+        </div>
+        <!--Слайдер-->
+        <!-- <button id="order" onclick="showPopup("bug"); return false"><a href="javascript:PopUpShow()">Заказать</a></button> -->
+        <!-- PopUp -->
+        <button id="order" onclick="PopUpShow()">Заказать</button>
+<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <form action="#" method="post" class="blackText">
+            
+            <a class="blackText" href="javascript:PopUpHide()" text-align="right">&#10006;</a>
+            <img src="image/order.png" alt="image" ><br>
+            <h4>Заполните заявку</h4>
+            <p>и в ближайшее время мы с вами свяжемся</p><br>
+            <label>Ваше имя*</label><br>
+            <input type="text" placeholder=" Иван"><br>
+            <label>Номер Телефона*</label><br>
+            <input type="phone" placeholder=" 8-123-456-789"><br>
+            <input class="button" type="submit" value="Заказать">
+        </form>
+    </div>
+</div>
+<!-- PopUp -->
+    </header>
+   
+    <div class="content">
+        <div class="service">
+            <h3>Наши услуги и преемущества</h3>
+            <h5>Мы предлагаем удобную TV-Приставку для просмотра популярных <br>каналов со всего мира</h5>
+            <table width="70%" align="centr">
+                <tr>
+                    <th><img src="image/pic-1.png" alt="Универсальность"></th>
+                    <th><img src="image/pic-2.png" alt="Мобильность"></th>
+                    <th><img src="image/pic-3.png" alt="Простота"></th>
+                </tr>
+                <tr>
+                    <th><strong>Универсальность</strong></th>
+                    <th><strong>Мобильность</strong></th>
+                    <th><strong>Простота использования</strong></th>
+                </tr>
+                <tr>
+                    <th>Наша приставка не привязана к определенной марке телевизора и легко подключается к любой модели</th>
+                    <th>При переезде или в путешествие, все что нужно это подключить приставку к интернету на новом месте</th>
+                    <th>Не требуется ничего настраивать просто подключите и смотрите любимые каналы и передачи</th>
+                </tr>
+            </table>
+        </div>
+        <div class="tvbox">
+            <h3 id="left">Название приставки</h3>
+            <img src="image/tvbox2.png" alt="TV-box">
+            <p align="justify">Наша TV-Приставка универсальный продукт, она легко подключается к любым моделям телевизоров и позволяет просматривать цифровые ТВ-каналы различных стран в высоком качестве. У вас не возникнит проблем с настройкой каналов, все это мы сделаем за вас заранее, вам останется только подключить приставку к телевизору.</p>
+            <button id="order2" onclick="PopUpShow()">Заказать</button>
+          
+        </div>
+        <div class="tarif">
+            <h3>Один тариф на все</h3>
+            <h5>У нас всего один базовый тариф, который включает в себя весь набор<br> предоставляемых телеконалов</h5>
+            <table width="75%">
+                <tr>
+                <td><strong><span>7 </span>стран</strong></td>
+                <td><strong><span>350 </span>руб/мес</strong></td>
+                <td><strong><span>3 </span>месяца бесплатно</strong></td>
+                </tr>
+                <tr align="left">
+                <td>Приобретая нашу приставку Вы получаете возможность просмотра более 250 каналов из 7 стран мира.</td>
+                <td>У нас единая абонентская плата, которая составляет 350 рублей в месяц за все каналы.</td>
+                <td>При покупке TV-Приставки мы дарим Вам 3 месяца бесплатного использования.</td>
+                </tr> 
+            </table>
+        </div>
+        <div class="countres">
+            <h3>Страны и телеканалы</h3>
+            <h5>Наша приставка транслирует более 250 каналов из 7 стран</h5>
+            <table width="70%">
+            <tr>
+            <td><span>&bull;</span>Россия</td>
+            <td><span>&bull;</span>Турция</td>
+            <td><span>&bull;</span>Кыргызстан</td>
+            <td><span>&bull;</span>Азербайджан</td>
+            </tr>
+            <tr>
+            <td><span>&bull;</span>Армения</td>
+            <td><span>&bull;</span>Америка</td>
+            <td><span>&bull;</span>Украина</td>
+            <td></td>
+            </tr>
+            </table>
+        </div>
+        <div class="abonent">
+            <h3>Как стать нашим абонентом</h3>
+            <h5>Все просто, вы заказываете приставку, мы настраиваем ее для вас, остается только получить приставку и подключить ее к телевизору</h5>
+            <table  width="80%" >
+                <tr id="bold">
+                <td>1.Закажи&#8594;</td>
+                <td>2.Получи&#8594;</td>
+                <td>3.Подключи&#8594;</td>
+                </tr>
+                <tr>
+                <td>Закажите TV-приставку на нашем сайте прямо сейчас</td>
+                <td>Заберите приставку в ближайшем пункте почтовой</td>
+                <td>Подключи приставку к телевизору и наслаждайся просмотром</td>
+                </tr>
+            </table>
+         
+            <table>
+                <tr>
+                    <td>Если у вас остались вопросы<br> свяжитесь с нами:</td>
+                    <td><img src="image/mail.png" alt="mail" ></td>
+                    <td>plasma@t-sk.ru <br> электронная почта</td>
+                    <td><img src="image/phone.png" alt="phone"></td>
+                    <td>+7 900 100 80 60 <br>звонок бесплатный</td>
+                </tr>
+            </table>
+        </div>
+    
+    <footer>
+        <hr color="#E8E8E8">
+        <table align="centr" cellspacing="0">
+        <tr>
+            <td><strong>О нас</strong></td>
+            <td><strong>Абонентам</strong></td>
+            <td><strong>Контакты</strong></td>
+            <td><strong>Мы в соцсетях</strong></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+            <tr>
+                <td>MYGOODTV - это удобная </td>
+                <td><a href="cabinet.html">Личный кабинет</a></td>
+                <td>plasma@t-sk.ru</td>
+                <td><a href="https://facebook.com"><img src="image/fb.png" alt="FB"></a></td>
+            </tr>
+            <tr>
+                <td>приставка для просмотра каналов</td>
+                <td><a href="market.html">Магазин</a></td>
+                <td>+7 800 707 80 80</td>
+                <td><a href="https://ok.ru"><img src="image/ok.png" alt="OK"></a></td>
+            </tr>
+            <tr>
+                <td>со всего мира</td>
+                <td><a href="#">Форум</a></td>
+                <td></td>
+                <td><a href="https://vk.com"><img src="image/vk.png" alt="VK"></a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

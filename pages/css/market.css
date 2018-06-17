@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: dosis;
+    background-color: white;
+    font-size: 16px;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    color: #414b4c;
+    width: 80%;
+    align-content: center;
+    background-color: #B5B4B0;
+    min-width: 1136px;
+}
+header{
+    background-color: #2983e6;
+    color: white;
+    font-family: Open sans;
+    padding: 0 0 3.6% 0;
+    white-space: nowrap;
+}
+header li,ul { 
+    padding: 2%;
+    display: inline; 
+}
+/*Корзина*/
+#market{
+    height: auto;
+    /*border: 1px solid #2983e6;
+    margin: auto;*/
+}	
+#block-content{
+    width: 600px;
+    height: auto;
+}
+#cart{
+    /*margin-left: 20%;*/
+    
+}
+div#cart{
+    display: block;
+    position: absolute;
+    text-align: left;
+   /* padding: 2% 9% 0 1%;*/
+    cursor: pointer;
+    float: right;
+   /* padding: 1% 5% 0 1%;
+   /* padding: 15px;
+    border: 1px solid black;
+    background-color: #2983e6;
+    /*border: 1px solid #2983e6;*/
+}
+#cart p{
+    font-family: open sans;
+    text-align: left;
+    cursor: pointer;
+    padding: 7px 0 7px 0;
+    width: 190px;
+    /*border: 1px solid #2983e6;
+   margin: 0;*/
+    padding-left: 5px;
+    background-color: #2983e6;
+    color: white;
+}
+p.add-tovar{
+display: inline-block;
+cursor: pointer;
+background: #B5B4B0
+width 48px;
+height: 48px;
+}
+#cart p span.corner-down{
+    background: url(./image/corner-down1.png) no-repeat;
+    width: 48px;
+    height: 48px;
+    /*display: block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -13px;*/
+}
+#cart p span.corner-up{
+    background-color: url(image/corner-up11.png) no-repeat;
+    width: 12px;
+    height: 7px;
+    display: block;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -13px;
+}
+#cart div{
+    /*border: 1 px solid #2983e6;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: -1px;
+    display: none;*/
+}
+#cart div p{
+    font-size: 15px;
+    /*margin: 5px;*/
+    color: white;
+}
+#cart div p span{
+    font-size: 18px;
+    display: block;
+    /*position: absolute;*/
+    margin-left: 80px;
+    margin-top: -22px;
+    color: white;
+}
+#cart div a{
+    font-family: open sans;
+    font-size: 14px;
+    display: inline-block;
+    width: 190px;
+    padding: 4px;
+    border: 1px solid #E8E8E8;
+    /*margin-top: 10px;
+    margin-left: 5px;*/
+    text-decoration: none;
+    background-color: #2983e6;
+    color: white;
+}
+#cart div a:hover{
+    background-color: #2068b6;
+}
+/*Корзина*/
+ul{
+    display: block;
+}
+header p#logo{
+    float: left;
+    padding: 1% 1% 1% 9%;
+}
+header p#phone{
+    float: right;
+    padding: 1% 9% 0 1%;
+}
+header li:hover{
+    background-color: #2068b6;
+}
+footer{
+	background-color: white;
+	
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+footer a{
+	color: black;
+}
+footer a:hover{
+	color: black;
+}
+footer a:visited{
+	color: black;
+}
+button{
+	font-family: PT-Sans;/*шрифт не работает*/
+	letter-spacing: 1px;
+	font-size: 14px;
+    color: white;
+	text-align: center;
+    background-color: #2983e6;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px 20px; /* Поля вокруг текста */
+}
+button:hover{
+    color: white;
+    background-color: #1665BB ;
+    border: 1px solid white;
+ }
+h1,h2,h3,h4,h5,h6{
+    font-family: PT Sans;
+    font-weight: lighter;
+}
+button#order{
+	float: right;
+}
+h3{
+	font-size: 32px;
+}
+h5{
+	font-size: 16px;
+}
+p#gray{
+	color: gray;
+}
+table{
+	margin: auto;
+	font-family: PT Sans;
+}
+table th{
+	font-weight: lighter;
+}
+.product{
+	background-color: white;
+	position: relative;
+	height: 100%;
+}
+.product img{
+	float: left;
+    margin: 3%;
+}
+.product #tvbox{
+    border: solid #E8E8E8 1px;
+}
+.product p{
+    line-height: 1.5;
+}
+#tvbox ,#tvboxw, #pult, #cabel, #module-wifi{
+	/*border: 1px solid black;*/
+	margin: 10%;
+	height: 20%;
+    border: solid #E8E8E8 1px;
+}
+/*----------------------------------*/

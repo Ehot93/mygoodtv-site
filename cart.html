@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cart.css">
+    <!-- <script src="http://code.jquery.com/jquery-1.8.3.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/cart.js"></script>
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>MYGOODTV</title>
+</head>
+<body>
+   <header> <p id="logo"><a href="index.html"><img src="image/logo.PNG" alt="logo"></a></p>
+          <p id="phone">+7 900 80 80 <br>звонок бесплатный</p>
+           <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="market.html">Магазин</a></li>
+            <li><a href="forum/index.php">Форум</a></li>
+            <li><a href="cabinet.html">Личный кабинет</a></li>
+        </ul>
+        </header>
+        <!-- <div class="disp"> -->
+        <h2>Оформление заказа</h2><a href="market.html" id="link">Вернуться в магазин</a>
+        <!-- </div> -->
+        <div class="order">
+        
+        <!-- <form action="" method=""> -->
+            <div id="product">
+            <p align="left"><img src="image/1.png" alt="1" ><span class="up">Ваша корзина</span></p>
+            <p align="right"><a class="blackText" href="javascript:BasketShow()">Редактировать</a></p><br>
+            <hr color="#E8E8E8">
+                <div class="hide1"><br>
+                <span>Общая стоимость:</span><div id="result1"></div><br>
+                <!-- <span>id товара</span><div id="result2"></div><br> -->
+                <span>Количество товара:</span><div id="result3"></div><br>
+                <!-- <span>Количество товара:</span><input id="counter" type="number" min="0" max="99" step="1"> -->
+                
+                <button class="btn2" onclick="BasketHide()">Продолжить</button><br><br><br>
+                </div>
+            </div>
+        <!-- </form> -->
+        
+        <!-- <form> -->
+          <div id="data">
+            <p align="left"><img src="image/2.png" alt="2">Контактные данные</p>
+            <p align="right"><a class="blackText" href="javascript:DataShow()">Редактировать</a></p><br>
+            <hr color="#E8E8E8">
+              <div class="hide2"><br>
+                <table>
+                  <tr>
+                    <td>*Имя</td>
+                    <td>Фамилия</td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" placeholder=" Иван" name="user_name"></td>
+                    <td><input type="text" placeholder=" Иванов" surname="user_surename"></td>
+                  </tr>
+                  <tr>
+                    <td>E-mail</td>
+                    <td>*Телефон</td>
+                  </tr>
+                  <tr>
+                    <td><input type="email" placeholder=" Ivan@mail.ru" email="user_email"></td>
+                    <td><input type="tel" placeholder=" 8-999-888-77-66" phone="user_phone"></td>
+                  </tr>
+                </table>
+              <button class="btn2" onclick="DataHide()">Продолжить</button><br><br><br>
+              <!-- <input type="submit" onclick="DataHide()" placeholder="Отправить"> -->
+              </div>
+          </div>
+        <!-- </form> -->
+          <!-- <div id="create">
+            <button onclick="#">Отправить</button>
+          </div> -->
+          <!-- <form> -->
+            <div id="delivery">
+              <p align="left"><img src="image/3.png" alt="3">Способ доставки</p>
+              <p align="right"><a class="blackText" href="javascript:DeliveryShow()">Редактировать</a></p><br>
+              <hr color="#E8E8E8">
+                <div class="hide3">
+                  <table>
+                    <tr>
+                      <td>Страна</td>
+                      <td>Город</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><select name="country" id="">
+                          <option value="">Россия</option>
+                          <option value="">Украина</option>
+                          <option value="">Казахстан</option>
+                          </select>
+                      </td>
+                      <td><select name="citi" id="">
+                          <option value="">Москва</option>
+                          <option value="">Киев</option>
+                          <option value="">Астана</option>
+                          </select>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Укажите способ доставки:</td>
+                      <!-- <td>Адрес доставки:</td> -->
+                      <td>Укажите Ваш почтовый индекс:</td>
+                    </tr>
+                    <tr>
+                      <td><input id="cour" type="radio" name="del" value="Курьером"><p>Курьером</p></td>
+                      <!-- <td>Улица</td>
+                      <td>Дом</td>
+                      <td>Квартира</td> -->
+                      <td>Индекс</td>
+                    </tr>
+                    <tr>
+                      <td><input id="mail" type="radio" name="del" value="На почту"><p>На почту</p></td>
+                      <!-- <td><input type="text" placeholder="улица"></td>
+                      <td><input class="LowInput" type="number" min="0"></td>
+                      <td><input class="LowInput" type="number" min="0"></td> -->
+                       <td><input type="number"></td>
+                    </tr>
+                  </table>
+                  <button class="btn2" onclick="DeliveryHide()">Продолжить</button><br><br><br>
+              </div>
+            </div>
+          <!-- </form> -->
+      
+          <!-- <form> -->
+            <div id="payment">
+              <p align="left"><img src="image/4.png" alt="4">Способ оплаты</p>
+              <p align="right"><a class="blackText" href="javascript:PaymentShow()">Редактировать</a></p><br>
+              <hr color="#E8E8E8">
+              <div class="hide4">
+                <table>
+                  <tr>
+                    <td>Выберите способ оплаты:</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td><input id="paycart" type="radio" name="paycart" value="картой"><p>Карта Visa/MasterCard</p></td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><input id="cash" type="radio" name="cash" value="наличными"><p>Оплата наличными, при получении</p></td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </div>
+             <button class="btn2" onclick="PaymentHide()">Продолжить</button><br><br><br>
+            </div>
+          <!-- </form> -->
+
+          <!-- <form> -->
+            <div id="agree">
+              <p align="left"><img src="image/5.png" alt="5">Подтверждение</p>
+              <p align="right"><a class="blackText" href="javascript:AgreeShow()">Редактировать</a></p><br>
+              <hr color="#E8E8E8">
+              <div class="hide4">
+                <ul>
+                  <li><span id="name"></span>имя</li>
+                  <li><span id="phone"></span>телефон</li>
+                  <li><span id="e-mail"></span>емэил</li>
+                  <li><span id="delivery2"></span>какая доставка</li>
+                  <li><span id="address"></span>адресс</li>
+                  <li><span id="pay"></span>оплата</li>
+                </ul>
+                <hr color="#E8E8E8">
+                <span>Вы заказали<span id="countProduct">0</span> товаров, на сумму: <span id="coast">0</span></span>
+                <p>Стоимость доставки</p><p align="right">Бесплатно</p>
+                <p>Всего к оплате:</p><span id="coast2"></span>
+                <button class="btn2" onclick="AgreeHide()">Продолжить</button><br><br><br>
+              </div>
+            </div>
+          <!-- </form> -->
+        </div>
+
+         <footer>
+        <hr color="#E8E8E8">
+        <table cellspacing="15">
+        <tr>
+            <td><strong>О нас</strong></td>
+            <td><strong>Абонентам</strong></td>
+            <td><strong>Контакты</strong></td>
+            <td><strong>Мы в соцсетях</strong></td>
+        </tr>
+            <tr>
+                <td>MYGOODTV - это удобная  со </td>
+                <td><a href="cabinet.html">Личный кабинет</a></td>
+                <td>plasma@t-sk.ru</td>
+                <td><a href="https://facebook.com"><img src="image/fb.png" alt="FB"></a></td>
+            </tr>
+            <tr>
+                <td>приставка для просмотра каналов</td>
+                <td><a href="market.html">Магазин</a></td>
+                <td>+7 800 707 80 80</td>
+                <td><a href="https://ok.ru"><img src="image/ok.png" alt="OK"></a></td>
+            </tr>
+            <tr>
+                <td>всего мира</td>
+                <td><a href="#">Форум</a></td>
+                <td></td>
+                <td><a href="https://vk.com"><img src="image/vk.png" alt="VK"></a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

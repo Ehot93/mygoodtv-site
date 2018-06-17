@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: dosis;
+    background-color: white;
+    font-size: 16px;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    color: #414b4c;
+    width: 80%;
+    align-content: center;
+    background-color: #B5B4B0;
+    min-width: 1136px;
+}
+header{
+    background-color: #2983e6;
+    color: white;
+    font-family: Open sans;
+    padding: 0 0 3.6% 0;
+    white-space: nowrap;
+}
+header li,ul { 
+    padding: 2%;
+    display: inline; 
+}
+ul{
+    display: block;
+}
+header p#logo{
+    float: left;
+    padding: 1% 1% 1% 9%;
+}
+header p#phone{
+    float: right;
+    padding: 1% 9% 0 1%;
+}
+header li:hover{
+    background-color: #2068b6;
+}
+footer{
+	background-color: white;
+	
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a#link{
+    padding: 3%;
+    color: #2068b6;
+    float: right;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+footer a{
+	color: black;
+}
+footer a:hover{
+	color: black;
+}
+footer a:visited{
+	color: black;
+}
+button{
+	font-family: PT-Sans;/*шрифт не работает*/
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-align: center;
+    background-color: #2983e6;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px 20px; /* Поля вокруг текста */
+}
+button:hover{
+    color: white;
+    background-color: #1665BB ;
+    border: 1px solid white;
+ }
+h1,h2,h3,h4,h5,h6{
+    font-family: PT Sans;
+    font-weight: lighter;
+}
+h2{
+    padding: 2%;
+    float: left;
+}
+h3{
+	font-size: 32px;
+}
+h5{
+	font-size: 16px;
+}
+
+p#gray{
+	color: gray;
+}
+.order {
+    background: white;
+    height: 700px;
+}
+span{
+    float: left;
+    padding-left: 25%;
+    margin: 0 0 0 3%;
+}
+#data input{
+
+    padding-left: 10%;
+    margin: 1%;
+}
+#product{
+    padding: 2%;
+    /*border: solid #E8E8E8 5px;*/
+}
+#data{
+    
+}
+#create{
+padding-bottom: 2%;
+}
+table{
+	margin: auto;
+	font-family: PT Sans;
+}
+table th{
+	font-weight: lighter;
+}
+/*----------------------------------*/

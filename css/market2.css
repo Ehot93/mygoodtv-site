@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|PT+Sans');
+body{
+	background-color: #B5B4B0;
+	font-family: dosis;
+    font-size: 16px;
+    width: 60%;
+    padding: 0 20% 0 20%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+button{
+	font-family: PT-Sans;/*шрифт не работает*/
+	letter-spacing: 1px;
+	font-size: 14px;
+	left: 50%;
+    background-color: #2983e6;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px 20px; /* Поля вокруг текста */
+}
+button:hover{
+    color: white;
+    background-color: #1665BB ;
+    border: 1px solid white;
+ }
+h1,h2,h3,h4,h5,h6{
+    font-family: PT Sans;
+    text-align: center;
+    font-weight: lighter;
+}
+button#order{
+	right: 50%;
+	float: right;
+}
+h3{
+	font-size: 32px;
+}
+h5{
+	font-size: 16px;
+}
+/*HEADER*/
+header{
+    background-color: #2983e6;
+    color: white;
+    font-family: PT sans;
+    padding: 0 1% 1% 1%;
+    white-space: nowrap;
+}
+header li,ul { 
+    padding: 22px;
+    display: inline;  
+}
+header li:hover{
+    background-color: #2068b6;
+}
+ul{
+    display: block;
+    text-align: center;
+}
+header p#logo{
+    float: left;
+    padding: 1% 1% 1% 1%;
+}
+header p#phone{
+    float: right;
+    padding: 1% 9% 1% 1%;
+}
+/*HEADER*/
+table{
+	margin: auto;
+	font-family: PT Sans;
+}
+table th{
+	font-weight: lighter;
+}
+footer{
+	background-color: white;
+	padding-bottom: 
+}
+footer table{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.product{
+	background-color: white;
+
+	/*outline: 1px solid black;*/
+}
